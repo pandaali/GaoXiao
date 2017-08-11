@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A5FD9B65E05CA772814FF88 /* Pods_GaoXiao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1465DDC615306C74BC62620F /* Pods_GaoXiao.framework */; };
 		D291C9B01F3D5753008B3D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D291C9AF1F3D5753008B3D94 /* AppDelegate.swift */; };
 		D291C9B21F3D5753008B3D94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D291C9B11F3D5753008B3D94 /* ViewController.swift */; };
 		D291C9B51F3D5753008B3D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D291C9B31F3D5753008B3D94 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04C31A6281BEE197C5B0DB86 /* Pods-GaoXiao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaoXiao.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GaoXiao/Pods-GaoXiao.debug.xcconfig"; sourceTree = "<group>"; };
+		1465DDC615306C74BC62620F /* Pods_GaoXiao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaoXiao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C0A59BEDCF73EA504877D9 /* Pods-GaoXiao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaoXiao.release.xcconfig"; path = "Pods/Target Support Files/Pods-GaoXiao/Pods-GaoXiao.release.xcconfig"; sourceTree = "<group>"; };
 		D291C9AC1F3D5752008B3D94 /* GaoXiao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaoXiao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D291C9AF1F3D5753008B3D94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D291C9B11F3D5753008B3D94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5FD9B65E05CA772814FF88 /* Pods_GaoXiao.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D1A8F3687E2B8B145FA7354 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04C31A6281BEE197C5B0DB86 /* Pods-GaoXiao.debug.xcconfig */,
+				62C0A59BEDCF73EA504877D9 /* Pods-GaoXiao.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8271665DC6FD865060E89743 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1465DDC615306C74BC62620F /* Pods_GaoXiao.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D291C9A31F3D5752008B3D94 = {
 			isa = PBXGroup;
 			children = (
 				D291C9AE1F3D5752008B3D94 /* GaoXiao */,
 				D291C9AD1F3D5752008B3D94 /* Products */,
+				0D1A8F3687E2B8B145FA7354 /* Pods */,
+				8271665DC6FD865060E89743 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D291C9BE1F3D5753008B3D94 /* Build configuration list for PBXNativeTarget "GaoXiao" */;
 			buildPhases = (
+				FA21F68C65CBDA68F292114C /* [CP] Check Pods Manifest.lock */,
 				D291C9A81F3D5752008B3D94 /* Sources */,
 				D291C9A91F3D5752008B3D94 /* Frameworks */,
 				D291C9AA1F3D5752008B3D94 /* Resources */,
+				6190C9657A685641787414CE /* [CP] Embed Pods Frameworks */,
+				22AEF4DD503C94904E1DD96F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22AEF4DD503C94904E1DD96F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GaoXiao/Pods-GaoXiao-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6190C9657A685641787414CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GaoXiao/Pods-GaoXiao-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA21F68C65CBDA68F292114C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D291C9A81F3D5752008B3D94 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		D291C9BF1F3D5753008B3D94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C31A6281BEE197C5B0DB86 /* Pods-GaoXiao.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZYQ6U8J2X2;
@@ -274,6 +350,7 @@
 		};
 		D291C9C01F3D5753008B3D94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62C0A59BEDCF73EA504877D9 /* Pods-GaoXiao.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZYQ6U8J2X2;
