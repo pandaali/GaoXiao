@@ -7,7 +7,11 @@ target 'GaoXiao' do
 
   # Pods for GaoXiao
 
-	pod ‘Moya’
-	pod ‘ObjectMapper’
+pod ‘Moya’
+pod ‘ObjectMapper’
+pod ‘PageMenu’
+pod ‘SwiftGifOrigin’
+pod ‘MJRefresh’
+pod ‘Google-Mobile-Ads-SDK’
 
 end
